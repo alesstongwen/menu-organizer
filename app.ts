@@ -1,8 +1,10 @@
-import { MenuItem } from "./MenuItem";
-import { CsvMenuParser, Menu } from "./CsvMenuParser";
-import { HtmlWriter } from "./HtmlWriter";
-import { TextWriter } from "./TextWriter";
+import { CsvMenuParser } from "./src/CsvMenuParser";
+import { HtmlWriter } from "./src/HtmlWriter";
+import { TextWriter } from "./src/TextWriter";
 
-export interface IWritable {
-  write(menu: MenuItem[]): string;
+async function main() {
+  const parse = new CsvMenuParser("menu.csv"); // parse csv
+  // write txt from parse const new class write await write new txt?
+  // write html const new class await write a new html
 }
+main();
